@@ -1,0 +1,14 @@
+import ExpenseItem from "./ExpenseItem";
+
+function Expenses(props){
+
+    return(
+        props.item.forEach(element => {
+            console.log(element.title);
+                <ExpenseItem title={element.title} amount={element.amount} date={element.date}></ExpenseItem>
+        
+        })
+    )
+    
+}
+export default Expenses
